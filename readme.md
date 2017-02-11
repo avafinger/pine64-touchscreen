@@ -72,7 +72,7 @@ b.  Remove any *99-touch.conf* or similar .conf that may conflit with TSLIB
 
 
 c.  make a backup of your xorg.conf or any other conf you have 
-    in case something goes wrong you an restore it and work again.
+    in case something goes wrong you can restore it and work again with your Desktop.
 
 
 
@@ -123,9 +123,13 @@ d. **Now touch the LCD screen and enjoy**
 
 
 
-### Troubleshooting
+Troubleshooting
+===============
+
 
     a. **If your Desktop does not start, look for erros in /var/log/Xorg.0.log**
+
+
 
 		[    57.306] (**) Option "xkb_options" "lv3:ralt_switch"
 		[    57.307] (II) config/udev: Adding input device sunxi-ths (/dev/input/event5)
@@ -153,7 +157,11 @@ d. **Now touch the LCD screen and enjoy**
 		[    58.780] xf86TslibControlProc
 
 
+
+
     b. **Make sure the driver was recognized and loaded properly:**
+
+
 
 		[   44.198350] <<-GTP-INFO->> [1686]GTP i2c test OK.
 		[   44.228529] <<-GTP-INFO->> [2195]Chip Type: GOODIX_GT9
@@ -167,7 +175,10 @@ d. **Now touch the LCD screen and enjoy**
 		[   44.394412] <<-GTP-INFO->> [213]Create proc entry success!
 
 
+
+
     c. **Test the driver with:**
+
 
 		sudo cat /dev/input/event6 | hexdump
 		[sudo] password for ubuntu: 
@@ -184,6 +195,7 @@ d. **Now touch the LCD screen and enjoy**
 		00000a0 0000 0002 0000 0000 5ed5 589e 0000 0000
 		00000b0 0ccf 0006 0000 0000 0000 0000 0000 0000
 		00000c0 5ed5 589e 0000 0000 3562 0006 0000 0000
+
 
 
 *** WIP ***
