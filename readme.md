@@ -1,5 +1,5 @@
-Pine64 Touch Screen with TSLIB driver for X11 Desktops
-======================================================
+Pine64 Touch Screen with TSLIB driver for X11 Desktop
+=====================================================
 
 This is TSLIB driver (deb packages) to work on any X11 Desktop Environment, so you are able to use 
 your touch screen on X11 desktop environment.
@@ -127,7 +127,7 @@ Troubleshooting
 ===============
 
 
-    a. **If your Desktop does not start, look for erros in /var/log/Xorg.0.log**
+a. **If your Desktop does not start, look for erros in /var/log/Xorg.0.log**
 
 
 
@@ -159,7 +159,7 @@ Troubleshooting
 
 
 
-    b. **Make sure the driver was recognized and loaded properly:**
+b. **Make sure the driver was recognized and loaded properly:**
 
 
 
@@ -177,7 +177,7 @@ Troubleshooting
 
 
 
-    c. **Test the driver with:**
+c. **Test the driver with:**
 
 
 		sudo cat /dev/input/event6 | hexdump
@@ -196,6 +196,14 @@ Troubleshooting
 		00000b0 0ccf 0006 0000 0000 0000 0000 0000 0000
 		00000c0 5ed5 589e 0000 0000 3562 0006 0000 0000
 
+
+d. **Touch point is wrong or offset some pixels or i cannot touch the far edges of LCD**
+
+	This is an indication /etc/pointercal has been previously populated and
+	needs to be deleted:
+
+	sudo rm /etc/pointercal
+	sudo reboot
 
 
 *** WIP ***
