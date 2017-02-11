@@ -109,7 +109,7 @@ c. **Add/Edit the file xorg.conf with:**
 		#	Option "Mode" "Absolute"
 		EndSection
 
-
+**There is a working xorg.conf ready to be used if you don't know how add/change the correct parms.**
 
 d. **Reboot*
 
@@ -127,8 +127,7 @@ Troubleshooting
 ===============
 
 
-a. **If your Desktop does not start, look for erros in /var/log/Xorg.0.log**
-
+a. **If your Desktop does not start, look for errors in /var/log/Xorg.0.log**
 
 
 		[    57.306] (**) Option "xkb_options" "lv3:ralt_switch"
@@ -160,7 +159,6 @@ a. **If your Desktop does not start, look for erros in /var/log/Xorg.0.log**
 
 
 b. **Make sure the driver was recognized and loaded properly:**
-
 
 
 		[   44.198350] <<-GTP-INFO->> [1686]GTP i2c test OK.
